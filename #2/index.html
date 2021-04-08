@@ -1,0 +1,630 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Emperor Gaius Trump?</title><style>
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+
+.highlight-default {
+}
+.highlight-gray {
+	color: rgb(155,154,151);
+}
+.highlight-brown {
+	color: rgb(100,71,58);
+}
+.highlight-orange {
+	color: rgb(217,115,13);
+}
+.highlight-yellow {
+	color: rgb(223,171,1);
+}
+.highlight-teal {
+	color: rgb(15,123,108);
+}
+.highlight-blue {
+	color: rgb(11,110,153);
+}
+.highlight-purple {
+	color: rgb(105,64,165);
+}
+.highlight-pink {
+	color: rgb(173,26,114);
+}
+.highlight-red {
+	color: rgb(224,62,62);
+}
+.highlight-gray_background {
+	background: rgb(235,236,237);
+}
+.highlight-brown_background {
+	background: rgb(233,229,227);
+}
+.highlight-orange_background {
+	background: rgb(250,235,221);
+}
+.highlight-yellow_background {
+	background: rgb(251,243,219);
+}
+.highlight-teal_background {
+	background: rgb(221,237,234);
+}
+.highlight-blue_background {
+	background: rgb(221,235,241);
+}
+.highlight-purple_background {
+	background: rgb(234,228,242);
+}
+.highlight-pink_background {
+	background: rgb(244,223,235);
+}
+.highlight-red_background {
+	background: rgb(251,228,228);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(55, 53, 47, 0.6);
+	fill: rgba(55, 53, 47, 0.6);
+}
+.block-color-brown {
+	color: rgb(100,71,58);
+	fill: rgb(100,71,58);
+}
+.block-color-orange {
+	color: rgb(217,115,13);
+	fill: rgb(217,115,13);
+}
+.block-color-yellow {
+	color: rgb(223,171,1);
+	fill: rgb(223,171,1);
+}
+.block-color-teal {
+	color: rgb(15,123,108);
+	fill: rgb(15,123,108);
+}
+.block-color-blue {
+	color: rgb(11,110,153);
+	fill: rgb(11,110,153);
+}
+.block-color-purple {
+	color: rgb(105,64,165);
+	fill: rgb(105,64,165);
+}
+.block-color-pink {
+	color: rgb(173,26,114);
+	fill: rgb(173,26,114);
+}
+.block-color-red {
+	color: rgb(224,62,62);
+	fill: rgb(224,62,62);
+}
+.block-color-gray_background {
+	background: rgb(235,236,237);
+}
+.block-color-brown_background {
+	background: rgb(233,229,227);
+}
+.block-color-orange_background {
+	background: rgb(250,235,221);
+}
+.block-color-yellow_background {
+	background: rgb(251,243,219);
+}
+.block-color-teal_background {
+	background: rgb(221,237,234);
+}
+.block-color-blue_background {
+	background: rgb(221,235,241);
+}
+.block-color-purple_background {
+	background: rgb(234,228,242);
+}
+.block-color-pink_background {
+	background: rgb(244,223,235);
+}
+.block-color-red_background {
+	background: rgb(251,228,228);
+}
+.select-value-color-default { background-color: rgba(206,205,202,0.5); }
+.select-value-color-gray { background-color: rgba(155,154,151, 0.4); }
+.select-value-color-brown { background-color: rgba(140,46,0,0.2); }
+.select-value-color-orange { background-color: rgba(245,93,0,0.2); }
+.select-value-color-yellow { background-color: rgba(233,168,0,0.2); }
+.select-value-color-green { background-color: rgba(0,135,107,0.2); }
+.select-value-color-blue { background-color: rgba(0,120,223,0.2); }
+.select-value-color-purple { background-color: rgba(103,36,222,0.2); }
+.select-value-color-pink { background-color: rgba(221,0,129,0.2); }
+.select-value-color-red { background-color: rgba(255,0,26,0.2); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="6b2b7b30-96ad-4264-b97a-e141de47fd53" class="page sans"><header><h1 class="page-title">Emperor Gaius Trump?</h1></header><div class="page-body"><p id="2cce9b03-e89f-49f1-8014-eed674b9b615" class="">
+</p><p id="6ee2918a-7e03-4d37-bb82-2bad5f3ca0ce" class="">Hi,</p><p id="b675ce60-0073-4eb0-8508-47176f2500bd" class="">Welcome to SimonSays #2! If you’d like to sign up, you can do so <a href="https://simonpastor.substack.com/welcome">here</a>. Or just read on…</p><p id="757c2af0-d171-47ad-baca-ae33d041cc87" class="">Until next week,</p><p id="b85642db-9667-4862-91b4-41ccb5d9f9ec" class="">Stay safe!</p><figure id="03f15cd1-8665-48cd-82c9-0d788c0914e9" class="image"><a href="https://cdn.substack.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F719e190b-8e5d-4ec0-b4c3-aaa552e2ea8e_624x664.jpeg"><img src="https://cdn.substack.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F719e190b-8e5d-4ec0-b4c3-aaa552e2ea8e_624x664.jpeg"/></a></figure><p id="d56a673c-4e76-485b-a098-997745a0f3a8" class="">As I was reading Camus’ <em>Caligula</em>, though I struggled to understand the main protagonist’s nature, I couldn’t help being reminded of Trump. He shares the mysterious and surly trait of the emperor’s temperament. With regards to truth, Caligula states that “Everything around me is lies, and I, I want to live in truth!”. Trump has ceaselessly called out the “fake news media”, claiming that only he is right, that only he tells the truth.</p><p id="3b7702e1-aa6b-4082-b199-f8327c1f909a" class="">Caligula is Rome’s most infamous emperor. History remembers him for his extravagance, his arbitrary killings and his incestual relationships ; or to put it simply, his madness. While there is some truth to it, most of these accounts are exaggerations or fabrications. That is not to say that he wasn’t evil or that he doesn’t deserve this reputation, but it shows that whoever the real Caligula was, there was something about him or his actions that led historians and people to willingly worsen their accounts and vilify his character. Something he shares with Trump.</p><p id="7abd2137-9d44-442a-b8a7-01db9b8de096" class="">Let me be clear, <strong>Trump is no tyrant and the United States is no Ancient Rome</strong>. Yet, there’s something about these two complex yet often caricatured figures, that make them worth comparing.</p><p id="9b192695-f72b-4122-8872-172004d7e23f" class="">As Trump experiences the biggest crisis of his mandate, and of our world since WWII, Caligula’s rule offers insights about how obstinacy and defiance can lead to one’s downfall.</p><h2 id="7eca4ce5-abfd-4726-8150-fd6836f47201" class="">Caligula becomes Emperor</h2><p id="fefa24bc-b835-49ae-94f9-b7900b6f6a9e" class="">Caligula had a troubled childhood, to say the least. He was born the son of Germanicus, a very popular General and Aggripina, Emperor Augustus’ granddaughter. A few years after his birth, both his father and the Emperor died, resulting in a dangerous period for young Roman aristocrats as Tiberius’ consolidated his power. Aged 18, he was forced to live with Tiberius on the Island of Capri, where the Emperor had moved his Palace fearing plots in Rome. He stayed there for 6 years, treated both like a hostage and an adoptive son. This undoubtedly forged Caligula’s character, as he was constantly watched by Tiberius’ people and uncertain about his fate. According to some accounts, Tiberius had mentioned having him killed on numerous occasions.</p><figure id="7b2204fd-5a62-48eb-b439-f9de56b706cd" class="image"><a href="https://cdn.substack.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fb6877242-e546-45fe-a096-122172a46bba_2000x1569.png"><img src="https://cdn.substack.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fb6877242-e546-45fe-a096-122172a46bba_2000x1569.png"/></a></figure><p id="29a17d26-c571-4bf7-bce6-a52f344103da" class="">By the time of Tiberius’ death, Caligula had been named co-heir along with Tiberius’ son. Caligula’s father’s reputation gave him the loyalty of the army and the support of the people, and with it that of the Senate. In 37 AD, Caligula became Rome’s youngest Emperor, at the age of 24.</p><h2 id="50c1d51b-afb7-45b7-b21a-6d1a7679b1b6" class=""><strong>Are you not Entertained?</strong></h2><p id="1d0b448d-bfdf-441a-992c-23c9dc994bd5" class="">Caligula’s first months were a success. He pleased everyone by making generous donations to the elite and tax exemptions for the poor. He maintained an ideal political relationship with the Senate. He further strengthened the army’s support by increasing their salaries. Caligula also presented himself as an entertainer, throwing grandiose festivities. On one of such events, he appeared driving a triumphal chariot drawn by six horses, “<a href="https://www.amazon.fr/Caligula-Biography-Aloys-Winterling/dp/0520287592">something that had never been done before</a>”.</p><p id="a7b3e183-c0bf-4fee-b7c4-b02559216aaa" class="">Like Caligula, Trump’s first years were arguably quite successful. He managed to further his conservative agenda, withdrawing from the Trans-Pacific Partnership, successfully appointing a Supreme Court Justice and dismantling various Obama-era regulations. His biggest success regarded the economy: with the stock market reaching all-time highs while unemployment continued the post-crisis trend set forward by the previous administration, reaching a 50-Year low.</p><p id="387eb99f-4572-4eab-9a25-a6b50895bfc4" class="">In addition, Caligula “<a href="https://www.amazon.fr/Caligula-Biography-Aloys-Winterling/dp/0520287592">extolled himself as an undertaker of great enterprises</a>”, building two new aqueducts for Rome and promising to build a canal in the isthmus of Corinth. “An undertaker of great enterprises” is probably the way Trump would describe himself. With his business empire, he engaged in colossal projects such as Trump Tower or the Taj Mahal hotel in Atlantic City. As President, he started the construction of the Mexican Border Wall.</p><h2 id="8caed227-cc48-482a-bf35-3ff604f41ece" class=""><strong>False Alarm</strong></h2><p id="6f66cd30-f76e-4aef-8043-717ffa7f813b" class="">On September 24th, 2019, following a complaint by an anonymous whistleblower to the House Intelligence Committee, House Speaker Nancy Pelosi, announced a formal impeachment investigation into the President stating that his communication with Ukraine presented “<a href="https://www.nytimes.com/2019/09/24/us/politics/democrats-impeachment-trump.html">a breach of his Constitutional responsibilities</a>”. On December 18, after months of deliberation and testimonials, Trump became the 3rd President of the United States to be formally impeached. While this did not have any consequence on Trump’s power, as he was acquitted by the Senate two months later, it reinforced Trump’s animosity towards his enemies.</p><p id="d7864f83-8dcc-448f-b367-59a3e4eb11d5" class="">This can be seen in one of the tools we have to analyse Trump’s mood, his Twitter account. President Trump’s tweets were at an all time high during that period, reaching up to 140 a day!</p><figure id="5f03955a-bc5b-44f1-8d71-ab01bd5ef404" class="image"><a href="https://cdn.substack.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fca06aa3a-b869-465a-8396-c0297fa843d1_2048x1459.jpeg"><img src="https://cdn.substack.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fca06aa3a-b869-465a-8396-c0297fa843d1_2048x1459.jpeg"/></a></figure><p id="841c0396-c462-42a3-bf38-86bcc06a5b4a" class="">Their content also seemed to be getting worse. The <a href="https://www.washingtonpost.com/graphics/politics/trump-claims-database/?itid=lk_inline_manual_2&amp;tid=lk_inline_manual_2&amp;tid=lk_inline_manual_3&amp;tid=lk_inline_manual_4&amp;tid=lk_inline_manual_2&amp;tid=lk_inline_manual_2&amp;itid=lk_inline_manual_2https://www.washingtonpost.com/graphics/politics/trump-claims-database/?itid=lk_inline_manual_2&amp;tid=lk_inline_manual_2&amp;tid=lk_inline_manual_3&amp;tid=lk_inline_manual_4&amp;tid=lk_inline_manual_2&amp;tid=lk_inline_manual_2&amp;itid=lk_inline_manual_2">Washington Post’s Fact Checker</a>  reveals that false statements reached their second all-time high record during that period.</p><figure id="71053ca7-3d35-457c-be12-022b7f9b3f3f" class="image"><a href="https://cdn.substack.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F157060e8-d5ad-4588-b3b2-59456b619c3f_1878x636.png"><img src="https://cdn.substack.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F157060e8-d5ad-4588-b3b2-59456b619c3f_1878x636.png"/></a></figure><p id="0f142854-47fa-4ce1-b786-5db387f8e9dd" class="">Caligula’s crisis was much more severe. A few months after the start of his rule, he fell ill. Little is known about this illness. Some have claimed that it was mental rather than physical, others that it was a poisoning attempt. Nevertheless, this seemed to have a profound effect on Caligula, as a different Emperor emerged. One who’s line between his inner nature and his facade had become totally blurred. Recovering in his sickbed, Caligula ordered that Tiberius’ son, who had been named co-heir to the throne, be assassinated. Similarly, he purged Macro and Silanus, two prominent Roman figures who had been part of his inner circle and who had helped him access power. Macro is believed to have said that the Emperor was of his making, and that the latter owed the throne to him. Words similar to what former White House Chief Strategist, Steve Bannon, has <a href="https://www.theatlantic.com/politics/archive/2018/01/the-president-vs-steve-bannon/549617/">said</a> with regards to Trump.</p><p id="28121cc8-c411-4081-ba58-bc9bba13587e" class=""><a href="https://epdf.pub/caligula-the-corruption-of-power.html">According</a> to the historian Anthony Bardett, “He [Caligula] was a very clever man, but he also had an irresponsible side to him”. By getting rid of people who had influence on him, Caligula’s reckless side could now go fully unchecked.</p><p id="6dd713fc-4df8-4192-b544-0d4268ccd151" class="">It’s hard to tell who has influence over Trump, and/or to what extent. Before the crisis, Trump’s separation with Steve Bannon was an important moment as Bannon was arguably one of his biggest political influences. The crisis would reinforce this lack of checks and balances on his actions as Vox <a href="https://www.vox.com/2020/1/24/21080090/trump-impeachment-tweets-obama-snowflakes">wrote</a> at the time, “one wonders how bad things will get in the likely event that Trump is acquitted by the Senate and heads into his reelection campaign feeling even less constrained by any sort of oversight.”</p><p id="836226a9-c6cb-4e94-b15b-9cdca77405d2" class="">This appears emphasised by the fact that in just 32 months, President Donald Trump&#x27;s rate of change has surpassed &quot;<a href="https://www.nbcnews.com/politics/white-house/charts-white-house-turnover-breaking-records-n1056101">all of his predecessors who served four-year term</a>”, as seen in the table <a href="https://www.brookings.edu/research/tracking-turnover-in-the-trump-administration/">below</a>.</p><figure id="d092dc3e-3f35-4d01-9504-bf3e10b69a84" class="image"><a href="https://cdn.substack.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fea902a24-d0e9-4785-85c4-32c769e12a31_1900x890.png"><img src="https://cdn.substack.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fea902a24-d0e9-4785-85c4-32c769e12a31_1900x890.png"/></a></figure><h2 id="bd6a381c-2c4d-4538-908d-bde710f83268" class=""><strong>Political Gladiators?</strong></h2><p id="3e9aaa42-b1eb-4e05-87b0-bd55f9eb29b5" class="">Caligula ruled in a peculiar period in Ancient Rome. Since Augustus, power was shared between the Senate and the Emperor, though the precise relationship had remained unclear. While Caligula initially adhered to Augustus’ <em>precepts</em>, the Caligula post-crisis adopted a different path. In the beginning of 39, Caligula gave a speech to the Senate in which he directly attacked the hypocrisy of the Senators. He publicly exposed these high-ranking dignitaries who praised the Emperor’s actions while at the same time plotting against him. He then went on to ridicule them, stating that he could give his horse a palace and appoint him to consulship (the most important goal of an aristocrat’s career). Thereby exposing a truth about Senators, they were there by grace of the emperor.</p><p id="ff7c5637-65f2-4b22-bc81-5cad1a84c820" class="">A 27 year old had profoundly shaken the system.</p><p id="f23c0f80-50d5-45a5-8bad-c426f8ed86e4" class="">Less room to manoeuvre has not prevented Trump from shaking the system. Anyone can agree on that. First, he’s affected the image of the Presidency, probably desacralising the role. He’s done so in different ways, among which is his discriminatory remarks, towards African Americans, Women, Latinos, LGBTQ+...</p><p id="57019f0c-271f-49b7-b69b-89c4d6b2983a" class="">He also has a tendency to advance unjustified and false facts. According to the <a href="https://www.washingtonpost.com/graphics/politics/trump-claims-database/?itid=lk_inline_manual_2&amp;tid=lk_inline_manual_2&amp;tid=lk_inline_manual_3&amp;tid=lk_inline_manual_4&amp;tid=lk_inline_manual_2&amp;tid=lk_inline_manual_2&amp;itid=lk_inline_manual_2https://www.washingtonpost.com/graphics/politics/trump-claims-database/?itid=lk_inline_manual_2&amp;tid=lk_inline_manual_2&amp;tid=lk_inline_manual_3&amp;tid=lk_inline_manual_4&amp;tid=lk_inline_manual_2&amp;tid=lk_inline_manual_2&amp;itid=lk_inline_manual_2">Post’s Fact Checker</a>, showed below (in false statements per day), in 1 170 days of presidency, President Trump has made 18 000 false or misleading claims. Trump is not the first President to lie. He’s the first president to lie to that extent. For more accounts on how Trump has desacralised the US Presidency, check the New York Times account <a href="https://www.nytimes.com/interactive/2018/05/25/opinion/editorials/Donald-Trumps-Guide-To-Presidential-Etiquette.html?mtrref=www.google.com&amp;gwh=115704CDB71371BC48BAF437B250362D&amp;gwt=pay&amp;assetType=REGIWALL">here</a>.</p><figure id="5fdff214-ef1b-47bf-b5a6-166550ca5657" class="image"><a href="https://cdn.substack.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F074d86f3-631d-4760-bfcb-090871df49a8_1850x626.png"><img src="https://cdn.substack.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F074d86f3-631d-4760-bfcb-090871df49a8_1850x626.png"/></a></figure><p id="a3f5942c-34bd-4ea0-9892-6e1cb191b976" class="">Second, he’s challenged the position of the President, by increasing its authority vis-a-vis Congress. He bypassed Congress on numerous occasions, signing for instance an executive order to pass a 2 billion arms deal with Saudi Arabia. He also issued a national emergency declaration, which allowed him to divert 3.6 billion dollars from the military construction budget for the construction of his Mexican Border Wall.</p><figure id="5e251e4e-cf33-4a0d-b22c-f80ca867e7a7" class="image"><a href="https://cdn.substack.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fb2e62642-a52d-4bd8-8278-0a2011649d97_2500x1667.jpeg"><img src="https://cdn.substack.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fb2e62642-a52d-4bd8-8278-0a2011649d97_2500x1667.jpeg"/></a></figure><p id="5a50c59b-78f3-4180-850f-732502b2fe9b" class="">Caligula’s attempt to disgrace Roman Aristocracy was accelerated in mid-39 following the uncovering of “The Great Conspiracy”. Among those conspiring to kill the Emperor were his closest confident, Lepidus, his two sisters Agrippina and Livilla, a large number of Senators and members of the military. Caligula’s response was harsh, but not particularly severe for the time: Lepidus was killed, his sisters were sent to exile, Senators were sentenced to death and military leaders replaced.</p><p id="72d3d272-c79a-4ec0-949b-78c381fe8af8" class="">Following that episode, it is said that one of his men constantly carried two large books called the <em>Dagger</em> and <em>Sword</em>, which recorded the behaviour of all the 600 Senators and the intended punishment for each, should he need it. He got rid of all Roman aristocrats in his inner circle, thus distancing them from the political center. He prevented the Senate from giving him further honors, to emphasise that his power did not come from them. From an Emperor in a Republic, he was becoming a King in the monarchical system he was creating.</p><h2 id="97166b78-c345-478c-a6fc-fa8c4fe09313" class="">Unstoppable Forces</h2><p id="206b80f6-6559-4ba8-9d4b-8e8fd590d1b7" class="">Caligula was therefore caught in a dangerous vicious circle he had helped create. By weakening and humiliating the Senators, his actions had reinforced their animosity and with it the plotting. That only exacerbated his paranoia and his desire to destroy the aristocracy.</p><p id="411765cc-29aa-421b-903d-e137f5188b44" class="">In the late 1990s, Mark Singer was assigned to write a profile for the New Yorker. Desperate for a clue as to what goes on inside Trump’s head, Singer <a href="https://www.amazon.com/Strange-Case-Donald-Trump-Psychological/dp/0197507441">asked</a> Trump what he was typically thinking about when shaving every morning. Trump had no answer. Singer tried another question “Do you consider yourself ideal company?”. To which Trump replied, “You really want to know what I consider Ideal company?  A total piece of ass”. Singer <a href="https://www.newyorker.com/magazine/1997/05/19/trump-solo">concluded</a> that Mr Trump had achieved something remarkable and utterly strange in human life, “an existence unmolested by the rumblings of the soul.”</p><p id="c047c574-d758-46d7-9966-108df1c7c672" class="">In other words, there is no private, reflective Trump. He is driven by the moment, and nothing else. “<a href="https://www.amazon.com/Strange-Case-Donald-Trump-Psychological/dp/0197507441">He is the episodic man</a>. He doesn’t live going forward very far, he doesn’t live in the past, he doesn’t go deep. He’s right there in the moment.”</p><p id="8005d0f5-cf89-4b5f-86bb-a45adf1cee15" class="">There’s something else about Trump, he likes to win. That’s probably an understatement, he lives to win. According to Buettner and Craig, between 1985 and 1994, Donald Trump lost more money than nearly any other individual American taxpayer”. At his lowest point he was 3.2 billion dollars in debt of which he had personally guaranteed 900 million. He was only able to recover, thanks to one of the biggest financial bailouts in American business history.</p><p id="5b6e0004-3579-4984-856d-bc085e159ffd" class="">As Dan P McAdams writes in <a href="https://www.amazon.com/Strange-Case-Donald-Trump-Psychological/dp/0197507441"><em>The Strange Case of Donal J. Trump: A Psychological Reckoning</em></a><em>:</em></p><blockquote id="ec9a7a0d-d5bf-435e-bf73-70f8b5e9e751" class="">The key psychological point to take home is that no matter how bad it got, no matter how humiliating it might seem to give up so many of your acquisitions and so much control in the wake of so many bad deals, Trump never stopped believing and proclaiming that he was a winner. He had lost more money than nearly any other businessman in the United States during a 10-year period. And yet he proclaimed himself a winner throughout. Always win.</blockquote><p id="8cebb469-57ed-4ba6-8c13-9d15cb384b7d" class="">Speaking about this episode, Trump <a href="https://books.google.fr/books?id=3TinCwAAQBAJ&amp;pg=PT212&amp;lpg=PT212&amp;dq=If+I+had+filed+a+personal+bankruptcy,+I+don%E2%80%99t+feel+my+comeback+story+would+have+been+nearly+as+good+a+story.+It+would+have+been+a+tarnished+story.&amp;source=bl&amp;ots=GmiebFQHFk&amp;sig=ACfU3U0WCw1JD1FfBRT92-VTJ0gaaRVSBg&amp;hl=en&amp;sa=X&amp;ved=2ahUKEwj1ocycwYbpAhXHA2MBHU5zBXAQ6AEwCXoECAkQAQ#v=onepage&amp;q=If%20I%20had%20filed%20a%20personal%20bankruptcy%2C%20I%20don%E2%80%99t%20feel%20my%20comeback%20story%20would%20have%20been%20nearly%20as%20good%20a%20story.%20It%20would%20have%20been%20a%20tarnished%20story.&amp;f=false">told</a> the media “If I had filed a personal bankruptcy, I don’t feel my comeback story would have been nearly as good a story. It would have been a tarnished story.” Because Trump’s brand, more so his identity, relies on winning or on satisfying that impression, he’ll therefore do anything to win.</p><p id="3ebabab5-8f54-4f55-b552-38b8dffbf8cd" class="">As Holiday Inn CEO Mike Rouse recalled, “Donald doesn’t play by the rules. He’ll say those are the rules, but then right away he’ll ignore them because winning is everything.”</p><p id="aae8d115-acbf-4159-8a0a-843f172a2293" class="">Or as Trump prefers to put it, here in an <a href="https://books.google.fr/books?id=LRc5AQAAQBAJ&amp;pg=PT6&amp;lpg=PT6&amp;dq=Timothy+O%E2%80%99Brien,+%E2%80%9CIn+the+end+I+always+win%E2%80%9D.&amp;source=bl&amp;ots=eXLGxlUU_S&amp;sig=ACfU3U0bj5evfASRupys6OyRXxjvJLMV7A&amp;hl=en&amp;sa=X&amp;ved=2ahUKEwilmNjViYbpAhVF2aYKHfvRCzMQ6AEwA3oECAoQAQ#v=onepage&amp;q=Timothy%20O%E2%80%99Brien%2C%20%E2%80%9CIn%20the%20end%20I%20always%20win%E2%80%9D.&amp;f=false">interview for Timothy O’Brien’s book</a> <em>TrumpNation: The Art of Being the Donald</em>, “In the end I always win”.</p><h2 id="fdf49eac-de12-4ac0-aa4b-ec9cfa21a4d8" class="">Is It Too Late Now to Say Sorry?</h2><p id="5ea0cf7c-25c9-4817-9e43-1fc620e4186d" class="">At a solemn banquet, in which aristocrats were invited, Caligula suddenly burst out laughing. Aristocrats asked what was funny, to which he replied, “What do you suppose, except that at a single nod of mine and both of you could have your throats cut on the spot?”</p><p id="247b4151-8400-4d1c-9e33-9a13a79fafcf" class="">These type of humiliations and threats were constant. He allowed slaves to accuse their masters. He forced the richest aristocrats to grant him generous donations. He also abolished reserved seating for aristocrats in the theatre, forcing them to compete with commoners for a seat.</p><p id="4d6f4b5d-479b-46ad-a32e-3020d089076c" class="">By disgracing the Senators and refusing to stop until Roman aristocracy had been shattered, Caligula’s death had become inevitable. As evidenced by the numerous plots  against him, if they were to survive, he had to be killed. In the beginning of 41 AD, on the fourth attempt in his four years of reign, Caligula was assassinated by Roman Senators.</p><figure id="5069e10e-3c6d-468f-bff6-0d1e8e94d5e5" class="image"><a href="https://cdn.substack.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Ff4fa8240-22a9-4388-a431-bd74243946af_1080x730.jpeg"><img src="https://cdn.substack.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Ff4fa8240-22a9-4388-a431-bd74243946af_1080x730.jpeg"/></a></figure><p id="dda94bee-f1e7-4c46-a3aa-bc5ce0fc396b" class="">Trump’s response and handling of the Coronavirus crisis so far has been severely criticised by experts and politicians nationwide. Far from bringing a change to Trump’s behaviour, it has reinforced his obstinacy and intensified his defiance towards other political institutions.</p><p id="9cef0553-8efb-4328-bf1a-5fcaaa1e0a23" class="">First, he’s spread numerous lies and unjustified claims, as compiled by the <a href="https://edition.cnn.com/2020/04/05/politics/timeline-trump-promises-coronavirus/index.html">CNN</a> Coronavirus fact-check. On one occasion he <a href="https://www.nytimes.com/2020/04/05/us/politics/trump-hydroxychloroquine-coronavirus.html">promoted</a> the use of the hydroxychloroquine drug, based on a “gut instinct”. A study <a href="https://www.cnbc.com/2020/04/24/coronavirus-citing-a-primary-outcome-of-death-researchers-cut-chloroquine-study-short-over-safety-concerns.html">published</a> this week revealed that the drug leads to higher death rates.</p><p id="c55b73f1-bd1b-41bb-9b76-f2d7bdcf16ee" class="">As I’m writing this article, Trump just <a href="https://www.nbcnews.com/politics/donald-trump/trump-suggests-injection-disinfectant-beat-coronavirus-clean-lungs-n1191216">announced</a> &quot;I see the disinfectant, where it knocks it out in one minute. And is there a way we can do something like that by injection inside or almost a cleaning”. Immediately following this statement, politicians and experts alike asked everyone to not consume or inject disinfectants.</p><p id="9f5de8d5-4ae0-46b7-baa5-e0e3f61fdc4a" class="">Moreover, he’s intensified his defiance to other political institutions. He <a href="https://www.theguardian.com/us-news/video/2020/apr/14/donald-trump-when-somebody-is-president-of-the-united-states-the-authority-is-total-video">announced</a> that “When somebody’s the president of the United States, the authority is total. And that is the way it’s going to be,” Trump told reporters. “It’s total. And the governors know that”. A comment echoing Caligula’s words “Let there be one ruler, one King!”</p><p id="073f40ff-a977-4de8-9669-65ebd898afd5" class=""><a href="https://twitter.com/tribelaw/status/1249834700702695429?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1249834700702695429%7Ctwgr%5E&amp;ref_url=https%3A%2F%2Fwww.huffpost.com%2Fentry%2Ftrump-total-authority-twitter-coronavirus-pandemic_n_5e951344c5b606109f5ed818">Laurence Tribe @tribelaw“The authority of the President of the United States is total.” — Emperor Donald J. Trump, April 13, 2020, 6:58 pm. Gasp!</a><a href="https://twitter.com/tribelaw/status/1249834700702695429?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1249834700702695429%7Ctwgr%5E&amp;ref_url=https%3A%2F%2Fwww.huffpost.com%2Fentry%2Ftrump-total-authority-twitter-coronavirus-pandemic_n_5e951344c5b606109f5ed818">
+</a><a href="https://twitter.com/tribelaw/status/1249834700702695429?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1249834700702695429%7Ctwgr%5E&amp;ref_url=https%3A%2F%2Fwww.huffpost.com%2Fentry%2Ftrump-total-authority-twitter-coronavirus-pandemic_n_5e951344c5b606109f5ed818">April 14th 2020</a><a href="https://twitter.com/tribelaw/status/1249834700702695429?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1249834700702695429%7Ctwgr%5E&amp;ref_url=https%3A%2F%2Fwww.huffpost.com%2Fentry%2Ftrump-total-authority-twitter-coronavirus-pandemic_n_5e951344c5b606109f5ed818">6,943 Retweets26,381 Likes</a></p><figure id="e5dc44a5-21d8-42e9-aa14-ee3abaacc05b" class="image"><a href="https://cdn.substack.com/image/twitter_name/w_36/tribelaw.jpg"><img src="https://cdn.substack.com/image/twitter_name/w_36/tribelaw.jpg"/></a></figure><p id="8b0100c9-35a9-4de6-8268-2158a00a99ab" class="">He went further by encouraging the protests to “liberate” states where the lockdown imposed was too severe. Interestingly, his comments were only limited to States with Democrat Governors, such as Michigan, Virginia or Minnesota, even though similar policies had been implemented in Ohio and Utah, Republican-Governed states.</p><p id="270a141c-a48d-4798-bc29-c6883b23b03c" class=""><a href="https://twitter.com/realdonaldtrump/status/1251169217531056130">Donald J. Trump @realDonaldTrumpLIBERATE MICHIGAN!</a><a href="https://twitter.com/realdonaldtrump/status/1251169217531056130">
+</a><a href="https://twitter.com/realdonaldtrump/status/1251169217531056130">April 17th 2020</a><a href="https://twitter.com/realdonaldtrump/status/1251169217531056130">43,073 Retweets212,126 Likes</a></p><figure id="c4da9ee1-b602-4bb9-86fe-c256ec27587f" class="image"><a href="https://cdn.substack.com/image/twitter_name/w_36/realDonaldTrump.jpg"><img src="https://cdn.substack.com/image/twitter_name/w_36/realDonaldTrump.jpg"/></a></figure><p id="39bc0133-a2f1-435c-bc6d-40fe9b6bc97a" class="">This way of dealing with crisis, has always worked for Donald Trump. Yet, the Coronavirus crisis is like no other he, or the World, has ever faced since WWII.</p><h2 id="f944a74c-a118-4d76-8325-e258f5d0a95b" class="">Race to 2020</h2><p id="171f8e51-9505-400c-ae97-6f079281da3e" class="">For now, the pandemic has had little effect on Trump’s Approval Ratings. While they initially received a bump, most likely due to a rally-around-the-flag effect, where people unite around their leaders in times of international crises, the most recent <a href="https://fivethirtyeight.com/features/americans-are-largely-unimpressed-with-trumps-handling-of-the-coronavirus-pandemic/">polls</a> suggest that Trump has lost this initial increase and that his approval ratings are returning to pre-coronavirus levels.</p><figure id="6279dfd2-eadb-40da-80e2-e4cb9d6accfd" class="image"><a href="https://cdn.substack.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F33b0ad5b-5b94-47bd-8692-41258ef8ce26_1150x622.png"><img src="https://cdn.substack.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F33b0ad5b-5b94-47bd-8692-41258ef8ce26_1150x622.png"/></a></figure><p id="fff471e5-7085-45b7-80ab-016e2828d4ab" class="">Similarly, the 2020 Presidential polls have remained stable. As seen in <a href="https://projects.fivethirtyeight.com/congress-generic-ballot-polls/">Five Thirty Eight’s Generic Ballot Polls of Polls</a> below.</p><figure id="879a3888-6f45-4a52-8f23-63d9fc452827" class="image"><a href="https://cdn.substack.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F2004f8a9-4c88-4976-973d-69df6fe31810_1782x1022.png"><img src="https://cdn.substack.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F2004f8a9-4c88-4976-973d-69df6fe31810_1782x1022.png"/></a></figure><p id="8cc3a39c-3e0f-4f56-a3fd-13a39743173d" class="">For all the negative ways this crisis could affect Trump, three things seem to be currently playing in his favor. First, by blocking flights from China early on in the crisis he managed to secure a strong political argument, which he and his supporters repeat over and over.</p><p id="39e122c6-0307-4d9d-9943-2491868149dd" class="">Second, no major power has escaped unharmed from the crisis. Indeed, sadly, the United States aren’t the only ones badly affected and/or poorly managed. Thus, while the numbers in the US are particularly impressive, they are similar to other badly affected countries (when looked at per capita).</p><p id="c971edfa-02d8-45b7-ae37-326a0b5ee003" class="">Last, the crisis has given Trump room to advance his agenda. By adding ‘Donald Trump’ to all the checks that will be sent out to affected Americans, an unprecedented move, President Trump might have found an easy way to gain votes. Moreover, the crisis has enabled him to pass certain laws in line with his conservative agenda such as the provisional ban on all immigration.</p><p id="e30a0c91-7b2d-4e51-8a0d-180c243a19bb" class="">However, the economy is in a terrible shape and the crisis is set to worsen. The country’s political and social landscape will undoubtedly be affected.</p><figure id="efa1ef55-7b66-461b-8977-f5acd1dbd9ce" class="image"><a href="https://cdn.substack.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fd4077f6f-bd59-463b-b73c-49f1e89703af_900x600.jpeg"><img src="https://cdn.substack.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fd4077f6f-bd59-463b-b73c-49f1e89703af_900x600.jpeg"/></a></figure><p id="f1610a67-0ef1-473c-94a1-68db17760357" class="">As Historian Tom Holland <a href="https://www.theguardian.com/books/2016/jun/01/donald-trump-has-fascinating-parallels-with-caligula-says-historian">concludes</a>, Caligula’s downfall was entirely his fault, “He could not help himself”. It appears that Trump too, cannot help himself and responds to crises by increased confrontation and obstinacy.</p><p id="9f3f6387-42d2-44a5-b3be-c194501290d5" class="">As I finished writing this article, one question came to mind: Would Trump be willing to adapt his behaviour, if he came to realise that it could harm his 2020 election prospects? Or will he, like he has always done before, remain solely focused on winning the moment?</p><p id="639b12bf-06ee-4da9-a656-d7c97b3a76fa" class="">Caligula died following his own perverted logic, that he could do anything and get away with it. Trump could fall following his, that he’s always right and that in the end he always wins.</p><p id="55af2ab7-1d2d-49c9-b021-fd80bca6b805" class="">The infamous Emperor’s rule lasted 4 years, will it be the same for President Trump?</p><hr id="43b724ac-b490-404e-8239-c9791a78c3c9"/><p id="6f821b48-19c4-4412-8c04-0d4478f4001c" class=""><em>Sign up here to get notified about my future posts !</em></p><p id="49adf5ec-9155-4e8f-9bcc-250a43160d89" class=""><a href="notion://www.notion.so/%%checkout_url%%">Sign up now</a></p><hr id="12090ca6-e08c-45c8-9db9-f97c2fad3ac4"/><h2 id="ccb7f89a-e050-492e-9e25-6739e95a32ee" class="">What Caught my Attention This Week</h2><p id="fda3389d-3805-42c6-bd9e-c52a24fe79f8" class=""><a href="https://www.politico.eu/article/coronavirus-throws-global-climate-diplomacy-into-disarray/">Coronavirus throws global climate diplomacy into disarray</a>. Guterres has called coronavirus “the biggest test the world has faced since the Second World War”. The virus has caught all countries off-guard, causing the world’s worst recession since the 1930s and throwing climate diplomacy into disarray.</p><p id="9867c888-59e6-4262-ba32-7c55a46f4b51" class=""><a href="https://www.bloomberg.com/news/articles/2020-04-25/the-20-minutes-that-broke-the-u-s-oil-market?srnd=premium-europe">20 minutes that broke the US Oil Market.</a> As you’re probably aware, the US Oil Barrel reached negative values this week. It’s always fascinating to me to see how fast these things happen.</p><p id="387233e5-9b2c-43ba-8fe7-07d7e14362c1" class=""><a href="https://www.nationalgeographic.com/magazine/2020/05/where-have-all-the-insects-gone-feature/">Where have all the insects gone?</a> Currently isolated in the countryside, I’m dealing with a lot of insects. Yet worldwide, species are falling at an alarming rate.</p><p id="cb99d507-de3f-4637-8c5e-af1359168e28" class=""><a href="https://www.politico.eu/article/giuseppe-conte-gamble-coronavirus-european-union-leaders/">Conte’s gamble</a>. Italy is one of the founding members of the European Union. Whereas it was difficult, yet possible, to imagine a European Union without the UK, it’s  inconceivable to imagine one without Italy. If Conte doesn’t secure a win, in the negotiations with the EU, Italian euroskepticism will be hard to fight.</p><hr id="730fb876-7936-42ab-b1d3-56cda6e1a723"/><h2 id="fb0579e5-9ada-4efc-83b1-74d230b4197b" class="">The Angel Philosopher</h2><p id="5af677fd-07c0-49d0-b969-fa6439055c5e" class="">AngelList CEO and Co-Founder, Naval Ravikant <a href="https://fs.blog/knowledge-project/naval-ravikant/">talks to The Knowledge Project’s Shane Parrish</a>. Naval is a brilliant investor, who’s invested in more than 100 companies including Uber, Twitter, Yammer, and many others. He’s also an incredibly deep thinker. You’ll learn about decision making, habits, reading and mental models.</p><hr id="f9f3e14e-c931-44d7-b389-c185d3cc7b1e"/><h2 id="21f914ac-6dd2-47ec-8dcf-0c5f23519a81" class="">What I’m Reading</h2><p id="e4990c76-b41c-44c7-877e-6fa569cbf6da" class=""><a href="https://www.amazon.com/Love-Time-Cholera-Oprahs-Book/dp/0307389731">Love in the Time of Cholera</a> by Nobel Laureate Gabriel Garcia Marquez.</p><p id="dcbffd57-8c3d-4f67-8fca-0741871ec6f8" class="">2 reasons to read this book:</p><ol id="e29fc2f4-5ce1-4660-aed0-b97a060838af" class="numbered-list" start="1"><li>It’s the proof that love really is eternal.</li></ol><ol id="0428c669-4980-46ff-ad0e-1761356e39e1" class="numbered-list" start="2"><li>It offers a welcome escape to the Caribbean Coast.</li></ol><p id="f3c0f018-c79d-45be-a6c4-d2a6369520d5" class="">“And how long do you think we can keep up this goddamn coming and going?” he asked. Florentino Ariza had kept his answer ready for fifty-three years, seven months, and eleven days and nights.</p><p id="3a571a7f-15c9-48ae-8a53-82649368d39d" class="">“Forever,” he said.</p><hr id="2e07c88d-905c-4f83-865c-c34143f7947f"/><h2 id="147c6cbb-0cac-4992-95c5-421e86ff4409" class="">Something to Think About</h2><p id="de6ca6d6-d803-4690-919c-bf82f3e85549" class="">“Nowadays people know the price of everything and the value of nothing.” Oscar Wilde, <em>The Picture of Dorian Gray</em></p><hr id="5fa1784a-8756-4064-a9ee-482a29d44ba2"/><p id="236a6808-62e1-42b3-bdaf-d5e23d1e9fea" class="">Feedback is greatly appreciated! Please reach out on Twitter @the_simonpastor or to simonjpastor@gmail.org !</p></div></article></body></html>
